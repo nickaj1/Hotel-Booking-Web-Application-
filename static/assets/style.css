@@ -1,0 +1,457 @@
+  h1 {
+    align-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+
+h4 {
+    align-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+
+nav {
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border-left: 0px solid black;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 1px solid black;
+  }
+
+/* ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin-right: 50px;
+  } */
+  
+  /* Datepicker Styles */
+
+/* Set colors */
+.datepicker {
+    background-color: skyblue;
+    color: #333333;
+  }
+  
+  /* Set typography */
+  .datepicker {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  
+  /* Add borders and shadows */
+  .datepicker {
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+  
+  /* Adjust size and dimensions */
+  .datepicker {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* Hover and Active States */
+  .datepicker:hover,
+  .datepicker:active {
+    background-color: skyblue;
+    border-color: #999;
+  }
+  
+  /* Add animation and transitions */
+  .datepicker {
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+
+  /* [Contact Us] */
+
+.contact {
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: url(/static/image/hw.jpg);
+background-size: cover;
+}
+
+.contact .contact{
+max-width: 800px;
+text-align: center;
+}
+
+
+.contact .contact h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  }
+
+  .contact .contact p{
+    font-weight: 300;
+    color: #fff;
+    }
+
+    .container{
+      width: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .container .contactInfo {
+      width: 50;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .contactInfo .box{
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+      
+    }
+
+    .container .contactInfo .box .icon{
+      min-width: 60px;
+      height: 60px;
+      background:#fff ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50;
+      font-size: 22px;
+
+      
+    }
+
+    .container .contactInfo .box .text{
+      display: flex;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #fff;
+      flex-direction: column;
+      font-weight: 300;
+    }
+
+    .container .contactInfo .box .text h3 {
+      font-weight: 500;
+      color: #00bcd4;
+    }
+
+    .contactForm{
+      width: 100px;
+      padding: 10px;
+      
+    }
+
+    .contactForm h2{
+       font-size: 30px;
+       color: #fff;
+       font-weight: 500; 
+    }
+
+    .contactForm .inputBox{
+      position: relative;
+      width: 100;
+      margin-top: 10px;
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea{
+      width: 100;
+      padding: 10px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+  .contactForm .inputBox span{
+  position: top;
+  left: 0;
+  padding: 1px 0;
+  font-size: 16px;
+  margin: 1px 0;
+  pointer-events: none;
+  transition: 0.5;
+  color:#fff;
+  }
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box1{
+  display: flex;
+}
+
+.box-container .box{
+  flex: 1 1 30rem;
+  border-radius: 5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+  margin-bottom: 1rem;
+  width: min-content;
+  min-width: 20em;
+
+}
+
+.box-container .box img{
+  height: 25rem;
+  width: 50%;
+  object-fit: cover;
+
+}
+
+.box-container .box .content{
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container .box .content h3{
+  font-size: 2rem;
+  color: #333;
+}
+
+.box-container .box .content h3 i{
+  color: var(--orange);
+}
+
+.box-container .box .content h3{
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+
+}
+
+.box-container .box .content .price{
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem;
+
+}
+
+/* .box-container .box .content .price span{
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+} */
+
+.box-container .box .content .btn{
+  font-size: 2rem;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* [ABOUT-US] */
+
+.heading{
+  text-align: center;
+  align-content: center;
+  font-size: xx-large;
+  font-style: oblique;
+  margin-bottom: 50px;
+}
+
+.heading p{
+  text-align: center;
+  align-content: center;
+  font-size: large;
+  justify-content: center;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.about-us body{
+  background-color: #dee;
+}
+
+.about-us img{
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  flex: 0 50%;
+}
+
+.content{
+  padding: 35px;
+  flex: 1;
+}
+
+.content h2{
+font-size: xx-large;
+margin: 10px 0px;
+}
+
+.content p{
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  margin: 10px 0px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.read-more{
+  display: inline-block;
+  color: #fff;
+  background-color: #0084ff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.read-more:hover{
+  background-color: #006dd6;
+}
+
+
+/* [HOME FOOTER] */
+
+footer {
+  background-color: #111;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container{
+  width: 100%;
+  padding: 70px 30px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+ /* Hover Effects on Social Media Icons */
+ .social-icons a:hover{
+  background-color: black;
+  transition: 0.5s;
+
+ } 
+
+ .social-icons a:hover i{
+  color: white;
+  transition: 0.5s;
+ }
+
+.footer-nav{
+  margin: 30px 0;
+}
+
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+  opacity: 1;
+}
+
+.footer-bottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p{
+  color: white;
+}
+
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+} 
+
+
+.box p{
+  text-align: right;
+  align-content: center;
+  justify-content: center;
+  float: right;
+}

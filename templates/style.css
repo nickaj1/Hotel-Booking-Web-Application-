@@ -1,0 +1,93 @@
+h1 {
+    align-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+    
+
+}
+
+h4 {
+    align-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+.body {
+    background: url(/static/image/ov.jpg) no repeat;
+    background-size: cover;
+    height:100vh;
+
+}
+
+.all{
+    align-items: center;
+    
+}
+
+nav {
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border-left: 0px solid black;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 1px solid black;
+    
+    
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin-right: 50px;
+  }
+  
+  /* Datepicker Styles */
+
+/* Set colors */
+.datepicker {
+    background-color: skyblue;
+    color: #333333;
+  }
+  
+  /* Set typography */
+  .datepicker {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  /* Add borders and shadows */
+  .datepicker {
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+  
+  /* Adjust size and dimensions */
+  .datepicker {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* Hover and Active States */
+  .datepicker:hover,
+  .datepicker:active {
+    background-color: skyblue;
+    border-color: #999;
+  }
+  
+  /* Add animation and transitions */
+  .datepicker {
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+

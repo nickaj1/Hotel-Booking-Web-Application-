@@ -1,0 +1,7 @@
+runtime: python311
+handlers:
+- url: /assets
+  static_dir: static/assets
+-url: /image
+  static_dir: static/image
+

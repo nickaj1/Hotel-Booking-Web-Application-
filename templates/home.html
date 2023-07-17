@@ -1,0 +1,201 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N&D|Hotel</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- <link rel="stylesheet" href="/static/assets/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">N & D Hotel"</h5>
+      <span class="text-body-secondary">Our motto "Your Comfort Is Our Priority".</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+    <!-- <div class="main-header">  -->
+        <!-- <div class="header"> -->
+          <div class="mx-auto p-2" style="width: 200px;">
+            <h1>N & D Hotel"</h1>
+          </div>
+          <h4 class="fst-italic">Your comfort is our priority</h4>
+                
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/booking">Book</a>
+                    </li>
+                    <li class="nav-item">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Rooms
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/booking">1 Bedroom</a></li>
+                          <li><a class="dropdown-item" href="/booking">Queensize Bedroom</a></li>
+                          <li><a class="dropdown-item" href="/booking">Kingsize Bedroom</a></li>
+                          <li><a class="dropdown-item" href="/booking">Executive  Bedroom</a></li>
+                        </ul>
+                      </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/reviews">Reviews</a>
+                    </li>
+
+                  </ul>
+
+
+                                      <!-- [BACKGROUND IMAGE] -->
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/static/image/ppq.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>WELCOME</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/static/image/res (1).jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>RESTAURANT</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/static/image/ovr.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>POOLSIDE</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                                            <!-- [END BACKGROUND IMAGE] -->
+                </ul>
+              </div>
+                                       
+                                  <!-- [FORM & SPAN] -->
+              <span class="border border-primary">
+              <form class="row g-3" method="post" action="/">
+              
+                               <!-- [BOOKING LOG] -->
+                  <div class="cal">
+                  <input id="datepicker" name="Date1" placeholder="Date-In">
+                  <input id="datepicker1" name="Date2" placeholder="Date-Out">
+                  </div>
+                                   <!-- [END] --> 
+
+                                 <!-- [DROPDOWN & SUBMIT] -->
+
+                  <div class="float-end">
+                    <div class="btn-group">
+                       
+                      <select class="form-select" name="room" aria-label="Default select example">
+                        <option selected>Rooms</option>
+                        <option value="1 Bedroom">1 Bedroom</option>
+                        <option value="Queensize Bedroom">Queensize Bedroom</option>
+                        <option value="Kingsize Bedroom">Kingsize Bedroom</option>
+                        <option value="Executive Bedroom">Executive  Bedroom</option>
+                      </select>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+              </div>
+                               <!-- [END] -->
+              {{Errormessage}}
+             
+                   
+             </form>
+              </span>
+              <!-- [END FORM & SPAN] -->
+
+
+              <!-- [FOOTER] -->          
+            </div>
+</body>
+             
+
+
+
+<div class="card text-center">
+  <div class="card-body">
+        <div class="footer-container">
+          <div class="social-icons">
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="snapchat.com"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="threads.net"><i class="fa-brands fa-threads"></i></a>
+          </div>
+        </div>
+    
+    <span>
+    <a href="/">Home</a>
+    <a href="/booking">Book Now</a>
+    <a href="/about-us">About</a>
+    <a href="/contact">Contact Us</a>
+    </span>
+
+      <p class="card-text">Copyright &copy;2023; Designed by <span class="designer">Nick Anderson</span></p>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  <script>
+      $( function() {
+        $( "#datepicker1" ).datepicker();
+      } );
+      </script>
+</html>
+{% endblock %}
