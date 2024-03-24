@@ -1,0 +1,248 @@
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Single Bedroom</title>
+   <link rel="stylesheet" href="/static/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+  </head>
+  <body> 
+    <div class="main-header">
+      <div class="header">
+        <h1>Available Rooms</h1>
+        <form method="post" action="/booking">
+        <div class="navigation">
+                                               <!-- [FORM & SPAN] -->
+
+        <span class="border border-primary"> 
+            <ul>
+
+            <div class="box-container">
+                <div class="box">
+                  <img src="/static/image/1bedroom.jpg">
+                  <p>Superior Room
+                    From the moment you enter the air conditioned Superior room at the Tang Palace Hotel 
+                    you see the beautifully appointed and fully carpeted room with floor to ceiling sliding
+                    glass doors that opens out to a private balcony offering either a poolside or city view.
+                    The queen sized bed with bedside light switches, is lavishly made up with high quality bedding and a multitude of pillows and cushions.
+                    Personal storage space comes in the form of a built-in wardrobe with sliding doors that reveal an electronic safe, an iron and an ironing board.
+                  </p>
+                  <div class="content">
+                    <h3>
+                      <i class="fas fa-map-marker-alt"></i> 1Bedroom
+                    </h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">500 cedis
+                    </div>
+                    <div class="col-auto">
+                        
+                    </div>
+
+                  </div>
+                    </div>
+              </div>
+
+            </ul>
+        
+           
+                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  BOOK NOW
+</button>
+                                              <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book Here</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="cal">
+          <input id="datepicker" name="Date1"  placeholder="Date-In">
+          <input id="datepicker1" name="Date2" placeholder="Date-Out">
+        </div>
+
+        <div class="row mt-4 mb-4">
+          <div class="col">
+            <input type="text" id="fname" name="fname" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" id="lname" name="lname" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        
+        <div class="row mt-4 mb-4">
+          <div class="col">
+            <input type="text" id="cardName" name="cardName" class="form-control" placeholder="Card name" aria-label="Card name">
+          </div>
+          <div class="col">
+            <input type="text" id="cardNum" name="cardNum" class="form-control" placeholder="Card number" aria-label="Card number">
+          </div>
+        </div>
+        
+        <div class="col-md-6 mt-4 mb-4">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Email: example@example.com" id="inputEmail4">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button id="send" value="{{ selected_room }}" type="submit" data-bs-toggle="modal" data-bs-target="#secondModal" class="btn btn-primary mb-3">Check In</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+                                       <!-- SECOND MODAL -->
+<!-- <div class="modal" id="secondModal" aria-labelledby="secondModalLabel" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="secondModalLabel" class="modal-title">PAYMENT</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+             here is empty for now
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" id="pay" class="btn btn-primary">Pay</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="alert alert-danger" role="alert" id="errorAlert" style="display: none;">
+  There is a mistake with your input
+</div>
+
+<div class="alert alert-success" role="alert" id="successAlert" style="display: none;">
+  You have succefully booked!
+</div>
+
+<!-- <div class='row'> 
+  <div id="result">
+</div> -->
+
+  <div>
+    <a href="/" name=" " class="home_b">Return Home</a>
+  </div>
+              <!-- {% if success %}
+               Room Booked Succescfully
+
+               {% endif %} -->
+        </div>
+      </form>
+    </span>
+                     <!-- [END FORM] -->
+
+      </div>   
+    </div>
+  </body>
+
+
+
+    <script>
+      $(document).ready(function() {
+        // Initialize datepicker for Date-In
+        $("#datepicker").datepicker();
+        
+        // Initialize datepicker for Date-Out
+        $("#datepicker1").datepicker();
+      
+        // Apply CSS styling to datepicker inputs
+        $("#datepicker, #datepicker1").css({
+          "padding": "8px",
+          "border": "1px solid #ccc",
+          "border-radius": "5px",
+          "font-size": "14px"
+        });
+      });
+      </script>
+       
+<script>
+  $(document).ready(function () {
+    $('#send').on('click',function(event) {
+      event.preventDefault();
+
+    // Open the second modal when the "Check In" button is clicked
+    // $('#secondModal').modal('show');
+
+      var selected_room = $(this).val();
+      var date1 = $('#datepicker').val();
+      var date2 = $('#datepicker1').val();
+      var fname = $('#fname').val();
+      var lname = $('#lname').val();
+      var cardName = $('#cardName').val();
+      var cardNum = $('#cardNum').val();
+      var email = $('#email').val();
+      
+      console.log(selected_room,date1,date2,fname,lname,cardName,cardNum,email);
+        $.ajax({
+            data: JSON.stringify({
+                date1 : date1,
+                date2 : date2,
+                fname : fname,
+                lname : lname,
+                cardName : cardName,
+                cardNum : cardNum,
+                email : email,
+                selected_room : selected_room,
+            }),
+            type: 'POST',
+            url: '/booking',
+            contentType: 'application/json',  // Set the Content-Type header to indicate JSON data
+            success:function (data) {
+            console.log(data);
+        if (data.success=='successAlert') {
+
+          // Display the error alert and hide the success alert
+        // $('#successAlert').hide();
+          alert(data.success);
+        } 
+        else {
+          // Display the success alert and hide the error alert
+          alert(data.success);
+          // $('#successAlert').html(data.success).show();
+        }
+      },
+
+
+      error:function (jqXHR, textStatus, errorThrown) {
+        // Handle AJAX failures here, e.g., network errors
+        // You can also hide both alerts in case of failure
+        alert('error').hide();
+    
+      }
+      
+        }) 
+
+    });
+
+});
+
+</script>  
+
+
+</html>
+
+{% endblock %}

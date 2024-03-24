@@ -3,11 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, miximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>N&D|Hotel</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- <link rel="stylesheet" href="/static/assets/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  
@@ -19,7 +21,7 @@
 <body>
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">N & D Hotel"</h5>
+      <h5 class="text-white h4">N & D Hotel</h5>
       <span class="text-body-secondary">Our motto "Your Comfort Is Our Priority".</span>
     </div>
   </div>
@@ -30,51 +32,53 @@
       </button>
     </div>
   </nav>
-    <!-- <div class="main-header">  -->
-        <!-- <div class="header"> -->
-          <div class="mx-auto p-2" style="width: 200px;">
+          <!-- <div class="mx-auto p-2" style="width: 200px;">
             <h1>N & D Hotel"</h1>
           </div>
-          <h4 class="fst-italic">Your comfort is our priority</h4>
+          <h4 class="fst-italic">Your comfort is our priority</h4> -->
                 
-                  <ul class="nav nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="/booking">Book</a>
-                    </li>
-                    <li class="nav-item">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Rooms
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/booking">1 Bedroom</a></li>
-                          <li><a class="dropdown-item" href="/booking">Queensize Bedroom</a></li>
-                          <li><a class="dropdown-item" href="/booking">Kingsize Bedroom</a></li>
-                          <li><a class="dropdown-item" href="/booking">Executive  Bedroom</a></li>
-                        </ul>
+                  <div class="mx-auto p-2">
+                    <ul class="nav nav-pills" style="display: flex; justify-content: space-between; width: 100%; padding: 0;">
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link active" aria-current="page" href="/home" style="text-decoration: none; color: #000;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Home</a>
                       </li>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/reservation">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/reviews">Reviews</a>
-                    </li>
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link" aria-current="page" href="/booking" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Book</a>
+                      </li>
+                      <li class="nav-item" >
+                        <li class="nav-item dropdown" style="flex: 1; text-align: center;">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            Rooms
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/booking">Single Bedroom</a></li>
+                            <li><a class="dropdown-item" href="/booking">Queensize Bedroom</a></li>
+                            <li><a class="dropdown-item" href="/booking">Kingsize Bedroom</a></li>
+                            <li><a class="dropdown-item" href="/booking">Executive  Bedroom</a></li>
+                          </ul>
+                        </li>
+                      </li>
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link" href="/reservation" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Reservation</a>
+                      </li>
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link" href="/contact" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Contact</a>
+                      </li>
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link" href="/about-us" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">About Us</a>
+                      </li>
+                      <li class="nav-item" style="flex: 1; text-align: center;">
+                        <a class="nav-link" href="/reviews" style="text-decoration: none; color: #4169E1;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Reviews</a>
+                      </li>
+  
+                    </ul>
+                  </div>
 
-                  </ul>
+                  
 
 
                                       <!-- [BACKGROUND IMAGE] -->
-                  <div id="carouselExampleCaptions" class="carousel slide">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="margin-top: 20px;">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -82,19 +86,19 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="/static/image/ppq.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/image/ppq.jpg" class="d-block w-100" alt="..." style="max-height: 100vh; width: auto; margin: 0 auto;">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>WELCOME</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="/static/image/res (1).jpg" class="d-block w-100" alt="...">
+                        <img src="/static/image/res (1).jpg" class="d-block w-100" alt="..." style="max-height: 100vh; width: auto; margin: 0 auto;">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>RESTAURANT</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="/static/image/ovr.jpg" class="d-block w-100" alt="...">
+                        <img src="/static/image/ovr.jpg" class="d-block w-100" alt="..." style="max-height: 100vh; width: auto; margin: 0 auto;">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>POOLSIDE</h5>
                         </div>
@@ -114,48 +118,48 @@
               </div>
                                        
                                   <!-- [FORM & SPAN] -->
-              <span class="border border-primary">
+              <span class="border border-primary" style="margin-top: 20px; padding: 20px;">
               <form class="row g-3" method="post" action="/">
               
                                <!-- [BOOKING LOG] -->
-                  <div class="cal">
+                  <!-- <div class="cal">
                   <input id="datepicker" name="Date1" placeholder="Date-In">
                   <input id="datepicker1" name="Date2" placeholder="Date-Out">
-                  </div>
+                  </div> -->
                                    <!-- [END] --> 
 
                                  <!-- [DROPDOWN & SUBMIT] -->
 
                   <div class="float-end">
                     <div class="btn-group">
-                       
-                      <select class="form-select" name="room" aria-label="Default select example">
+                      <select id="room" class="form-select" name="room" aria-label="Default select example">
                         <option selected>Rooms</option>
-                        <option value="1 Bedroom">1 Bedroom</option>
+                        <option value="Single Bedroom">Single Bedroom</option>
                         <option value="Queensize Bedroom">Queensize Bedroom</option>
                         <option value="Kingsize Bedroom">Kingsize Bedroom</option>
                         <option value="Executive Bedroom">Executive  Bedroom</option>
                       </select>
-
+                    </div>
+                  </div>
+                  
               <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
               </div>
                                <!-- [END] -->
-              {{Errormessage}}
-             
-                   
+              {{Errormessage}}            
              </form>
               </span>
-              <!-- [END FORM & SPAN] -->
+              <!-- [END FORM & SPAN] -->    
 
-
-              <!-- [FOOTER] -->          
             </div>
-</body>
-             
+<div class='row' style="margin-top: 20px;"> 
+          <div id="results">
+  </div>
+          </div>
+</body>       
+                                       <!-- [FOOTER] --> 
 
-
-
+<!-- 
 <div class="card text-center">
   <div class="card-body">
         <div class="footer-container">
@@ -164,7 +168,7 @@
             <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
             <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
             <a href="snapchat.com"><i class="fa-brands fa-snapchat"></i></a>
-            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="x.com"><i class="fa-brands fa-x"></i></a>
             <a href="threads.net"><i class="fa-brands fa-threads"></i></a>
           </div>
         </div>
@@ -177,6 +181,31 @@
     </span>
 
       <p class="card-text">Copyright &copy;2023; Designed by <span class="designer">Nick Anderson</span></p>
+  </div>
+</div> -->
+
+
+<div class="card text-center">
+  <div class="card-body">
+    <div class="footer-container" style="background-color: #333; padding: 20px 0;">
+      <div class="social-icons">
+        <a href="facebook.com"><i class="fa-brands fa-facebook" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+        <a href="instagram.com"><i class="fa-brands fa-instagram" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+        <a href="youtube.com"><i class="fa-brands fa-youtube" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+        <a href="snapchat.com"><i class="fa-brands fa-snapchat" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+        <a href="x.com"><i class="fa-brands fa-x" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+        <a href="threads.net"><i class="fa-brands fa-threads" style="color: white; text-decoration: none; margin-right: 10px; font-size: 24px;"></i></a>
+      </div>
+    </div>
+
+    <span>
+      <a href="/" style="color: white; text-decoration: none; margin-right: 20px; font-size: 16px;">Home</a>
+      <a href="/booking" style="color: white; text-decoration: none; margin-right: 20px; font-size: 16px;">Book Now</a>
+      <a href="/about-us" style="color: white; text-decoration: none; margin-right: 20px; font-size: 16px;">About</a>
+      <a href="/contact" style="color: white; text-decoration: none; margin-right: 20px; font-size: 16px;">Contact Us</a>
+    </span>
+
+    <p class="card-text">Copyright &copy;2023; Designed by <span class="designer" style="color: #FFA500;">Nick Anderson</span></p>
   </div>
 </div>
 
@@ -191,11 +220,104 @@
   $( function() {
     $( "#datepicker" ).datepicker();
   } );
-  </script>
+</script>
   <script>
       $( function() {
         $( "#datepicker1" ).datepicker();
       } );
-      </script>
+  </script>
+
+
+
+<script>
+$(document).ready(function() {
+
+$('form').on('submit', function(event) {
+  event.preventDefault();
+
+  $.ajax({
+    data : {
+      room : $('#room').val(),
+      // date1 : $('#datepicker').val(),
+      // date2 : $('#datepicker1').val(),
+      // selected_room : selected_room
+    },
+    type : 'POST',
+    url : '/',
+  })
+  
+  .done(function(data) { 
+    console.log(data['error'], );
+    if (data.error) {
+      $('#modal_id_error').html(data.error).show();
+      // $('#successAlert').hide();
+  }
+    else {
+      // create image cards using results 
+      // display cards at id={results}
+       // Loop through dbresults and create image 
+       // Clear previous results
+       $('#results').empty();
+        // Create a container for the cards and apply flexbox for horizontal layout
+      const cardContainer = $('<div class="card-container">').css({
+            display: 'flex',
+            flexWrap: 'nowrap', // Prevent cards from wrapping to the next line
+            overflowX: 'auto'   // Add horizontal scrollbar if needed
+        });
+
+       for (const result of data.dbresults) {
+        const card = $('<div class="card">').css({
+                border: '1px solid #ccc',
+                borderRadius: '8px',
+                width: '400px',
+                padding: '15px',
+                margin: '10px',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                backgroundColor: '#fff'
+            });
+        const cardBody = $('<div class="card-body">');
+          
+
+        // Create and append the image element
+        const image = $('<img class="card-img-top" alt="Room Image">').css({
+                height: '150px', // Set the desired height
+                width: '90%', // Allow width to adjust
+                objectFit: 'cover' // Maintain aspect ratio and crop if necessary
+            });
+              image.attr('src', result.image); // Set the image src based on the 'image' property in 'result'
+              cardBody.append(image);
+
+        // Append other card content
+        cardBody.append($('<h5 class="card-title">').text(result.rooms));
+        cardBody.append($('<p class="card-text">').text(`Price: ${result.price}, Status: ${result.status}`)); 
+
+        // Create and append the submit button
+        const submitButton = $('<a>').attr({
+                        href: `/booking?q=${result.roomid}`,
+                        class: 'btn btn-primary'
+                    }).text('Book Now');
+                    cardBody.append(submitButton); 
+
+        card.append(cardBody);
+        cardContainer.append(card);
+        $('#results').append(cardContainer);
+       }   
+
+       // Scroll to the newly added content
+      //  $('html, body').animate({
+      //       scrollTop: $('#results').offset().top
+      //   }, 10000); // 1000 milliseconds for smooth scrolling
+
+    }
+ 
+  });
+  
+});
+
+});
+</script>
+
+
+
 </html>
 {% endblock %}

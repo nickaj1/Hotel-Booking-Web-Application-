@@ -1,25 +1,108 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Review|Hotel</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="main-header">
-      <div class="header">
-        <h1> Review</h1>
-        <div class="navigation">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">HOME</a></li>
-          </ul>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Define the styles for the stars */
+        .rating {
+            display: inline-block;
+            font-size: 0;
+        }
+
+        .rating > input {
+            display: none;
+        }
+
+        .rating > label {
+            float: right;
+            font-size: 24px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .rating > label:before {
+            content: "\2605"; /* Filled star character */
+        }
+
+        .rating > input:checked ~ label {
+            color: #f39c12; /* Change color for selected stars */
+        }
+
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+            content: "\2605"; /* Filled star character */
+            color: #f39c12; /* Change color for hovered stars */
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit a Review</h1>
+    <form id="review-form" method="post" action="/reviews">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required><br><br>
+        
+        <label for="text">Review:</label><br>
+        <textarea id="text" rows="4" required></textarea><br><br>
+        
+        
+        <div id="rating" class="container mt-5">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Rate this item:</h5>
+                  <div class="rating">
+                      <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                      <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                      <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                      <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                      <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                  </div>
+              </div>
+          </div>
       </div>
-      
-    </div>
-  </body>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="message"></div>
+
+    
+    <script>
+        // JavaScript code to capture the review data and send it to the Flask server
+        $('#review-form').submit(function (event) {
+            event.preventDefault();
+
+            const title = $('#title').val();
+            const text = $('#text').val();
+            const rating = $('#rating').val();
+
+            const reviewData = {
+                title: title,
+                text: text,
+                rating: rating
+            };
+
+            // Send the review data to the Flask server via AJAX
+            $.ajax({
+                type: 'POST',
+                url: '/reviews',
+                data: JSON.stringify(reviewData),
+                contentType: 'application/json',
+                success: function (data) {
+                    $('#message').text(data.message);
+                    $('#review-form')[0].reset(); // Clear the form
+                },
+                error: function (error) {
+                    $('#message').text(error.responseJSON.error);
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
