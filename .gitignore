@@ -1,5 +1,18 @@
-*.env
-*.vscode
-* myenv
-*__pycache__
+# Ignore virtual environment
+myenv/
 
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment variables file
+.env
+
+# Ignore package distribution directories
+dist/
+build/
+*.egg-info/
+
+# Ignore other common files
+*.log
