@@ -16,4 +16,4 @@ build/
 
 # Ignore other common files
 *.log
-*.vscode 
+.vscode/
